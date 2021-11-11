@@ -21,6 +21,17 @@ body {
     font-size: 1.1em;
 }
 
+.banner {
+    position: relative;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.label{
+    display: block;
+}
+
 /* top header */
 .top_header {
     background-color: var(--total-black);
@@ -69,9 +80,7 @@ body {
 .bottom_header .sub-link .sub-link-item:hover a{
     color: var(--blue-ps);
 }
-.bottom_header .sub-link .sub-link-item .label{
-    display: block;
-}
+
 
 .bottom_header .sub-link .sub-link-item a{
     text-decoration: none;
@@ -107,16 +116,12 @@ body {
 /* jumbotron banner */
 .jumbo_top {
     background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
-    background-size: cover;
-    background-position: center;
     color: white;
-    height: 80vh;
-    position: relative;
 }
 
 .banner-desc-wrapper {
     position: absolute;
-    bottom: 2em;
+    bottom: 3em;
 }
 
 @media screen and (min-width: 992px) {
@@ -132,7 +137,7 @@ body {
 
 .banner-desc {
     font-size: 1.5em;
-    margin: 1em 0;
+    padding: 1.5em 0;
 }
 
 .btn_buy {
@@ -192,4 +197,22 @@ body {
 .ps5-hw-bottom .ps5-hw-thumb-wrapper:hover {
     border-bottom: 3px solid var(--blue-ps);
     margin-bottom: -3px;
+}
+.ps5-hw-bottom .ps5-hw-thumb-wrapper:hover .label{
+    color: var(--total-black);
+}
+
+.ps5-hw-bottom .ps5-hw-thumb-wrapper .label {
+    color: gray;
+}
+
+/* game banner */
+.game {
+    color: white;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.game .banner-desc-wrapper > img {
+    width: 50%;
+    margin-bottom: 3em;
 }
