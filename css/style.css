@@ -1,0 +1,23 @@
+:root {
+    --total-black: black;
+    --light-black: #1f1f1f;
+    --blue-ps: #2d64e6;
+    --deep-blue: #00439c;
+    --orange: #cd3d0f;
+    --gray: #d9dadc;
+
+    --twitter: #1da1f3;
+    --facebook: #1878f3;
+    --youtube: #c5312c;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top_header {
+    background-color: var(--total-black);
+}
+.top_header > img {
+    width: 90px;
+}
