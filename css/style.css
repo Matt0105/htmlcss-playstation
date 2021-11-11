@@ -1,6 +1,7 @@
 :root {
     --total-black: black;
     --light-black: #1f1f1f;
+    --light-black-btn: #363636;
     --blue-ps: #2d64e6;
     --deep-blue: #00439c;
     --orange: #cd3d0f;
@@ -20,4 +21,8 @@ body {
 }
 .top_header > img {
     width: 90px;
+}
+
+.bottom_header .navbar-nav .nav-item .btn-secondary {
+    background-color: var(--light-black-btn);
 }
