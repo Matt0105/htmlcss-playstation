@@ -101,15 +101,18 @@ body {
 }
 
 /* jumbotron banner */
-.jumbo {
+.jumbo_top {
     background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
     background-size: cover;
     background-position: center;
     color: white;
+    height: 80vh;
+    position: relative;
 }
 
 .banner-desc-wrapper {
-    padding-top: 30em;
+    position: absolute;
+    bottom: 2em;
 }
 
 @media screen and (min-width: 992px) {
@@ -119,23 +122,35 @@ body {
     }
 }
 
-
 .banner-title {
-    font-size: 4em;
-    margin-bottom: 0.5em;
+    font-size: 3em;
 }
 
 .banner-desc {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin: 1em 0;
 }
 
 .btn_buy {
-    margin: 1.5em 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-color: var(--orange);
     color: white;
 }
 .btn_buy:hover {
     background-color: var(--light-orange);
     color: white;
+}
+
+/* jumbotron bottom */
+
+.jumbo_bottom .jumbo-thumbs img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.jumbo_bottom .jumbo-thumbs:hover {
+    border-radius: 20px;
+    outline: 5px solid var(--blue-ps);
+    outline-offset: 5px;
+    cursor: pointer;
 }
