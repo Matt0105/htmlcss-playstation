@@ -216,3 +216,15 @@ body {
     width: 50%;
     margin-bottom: 3em;
 }
+
+/* soon */
+.soon {
+    background-color: var(--light-black);
+    color: white;
+}
+
+.soon .soon-thumb-wrapper > img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 20px;
+}
