@@ -17,7 +17,9 @@ body {
 }
 
 .btn {
-    font-size: 1.1em;
+    font-size: 1em;
+    outline: 3px solid transparent;
+    outline-offset: -5px;
 
     transition: all 0.3s;
 }
@@ -127,6 +129,27 @@ body {
 }
 .bottom_header .sub-link .sub-link-item:hover a{
     color: var(--blue-ps);
+}
+
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    vertical-align: middle;
+    content: "\f078";
+    border: 0;
+    font-weight: 900;
+    font-size: 0.8em;
+    font-family: "Font Awesome 6 Free";
+    /* border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent; */
+}
+.dropdown-toggle.show::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f077";
 }
 
 .bottom_header .btn-secondary {
