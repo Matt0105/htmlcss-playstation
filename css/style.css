@@ -286,7 +286,47 @@ body {
 /* social link */
 .social img {
     width: 100%;
+    cursor: pointer;
 }
+
+/* footer */
+footer {
+    background-color: var(--deep-blue);
+    color: white;
+}
+
+.footer-lang {
+    width: 20px;
+}
+
+.footer img:not(.footer-lang) {
+    display: block;
+}
+footer .ps-footer {
+    width: 13%;
+}
+footer .sie-footer {
+    width: 20%;
+}
+
+footer .footer-link .footer-link-item {
+    list-style-type: none;
+    margin-bottom: 0.6em;
+}
+footer .footer-link .footer-link-item > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-paragraph {
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+footer .footer-paragraph a {
+    color: white;
+}
+
 
 @media screen and (max-width: 991px) {
     .bottom_header .navbar-nav .nav-item .btn-secondary {
