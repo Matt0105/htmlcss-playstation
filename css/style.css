@@ -239,22 +239,6 @@ body {
     /* padding: 0 */
 }
 
-.back-img {
-    min-height: 398px;
-}
-
-@media screen and (min-width: 768px) {
-    /* .back-img {
-        min-height: 398px;
-        background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
-        background-position: right;
-        background-size: contain;
-        background-repeat: no-repeat;
-    } */
-
-
-}
-
 .btn-light {
     background-color: var(--gray);
     color: var(--blue-ps);
@@ -262,6 +246,15 @@ body {
 
 .ps-plus-games {
     max-height: 398px;
+}
+
+/* store discount */
+.ps-store img {
+    width: 100%;
+}
+
+.ps-store .banner-desc {
+    color: gray;
 }
 
 @media screen and (max-width: 991px) {
