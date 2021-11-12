@@ -9,10 +9,6 @@
     --light-orange: #f5815a;
     --gray: #d9dadc;
     --dark-gray: #bebcbb;
-
-    --twitter: #1da1f3;
-    --facebook: #1878f3;
-    --youtube: #c5312c;
 }
 
 body {
@@ -21,6 +17,16 @@ body {
 
 .btn {
     font-size: 1.1em;
+}
+
+.sub-title {
+    font-size: 2.2em;
+    margin-bottom: 0.7em;
+}
+
+.minor-title {
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
 }
 
 .banner-desc-wrapper {
@@ -274,6 +280,11 @@ body {
 }
 
 .ps-now .ps-now-games {
+    width: 100%;
+}
+
+/* social link */
+.social img {
     width: 100%;
 }
 
