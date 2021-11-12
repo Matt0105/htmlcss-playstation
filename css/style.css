@@ -18,6 +18,12 @@ body {
 
 .btn {
     font-size: 1.1em;
+
+    transition: all 0.3s;
+}
+.btn:hover {
+    outline: 3px solid white;
+    outline-offset: -5px;
 }
 
 .sub-title {
@@ -98,8 +104,6 @@ body {
 }
 .bottom_header .navbar-nav .nav-item .btn-secondary:hover {
     background-color: var(--grey-black-btn);
-    outline: 2px solid white;
-    outline-offset: -5px;
 }
 
 .bottom_header .sub-link {
@@ -161,8 +165,10 @@ body {
     color: white;
 }
 .btn_buy:hover {
-    background-color: var(--light-orange);
+    background-color: var(--orange);
     color: white;
+    outline: 3px solid black;
+    outline-offset: -5px;
 }
 
 /* jumbotron bottom */
@@ -221,16 +227,21 @@ body {
 .ps5-hw-bottom .ps5-hw-thumb-wrapper:hover img {
     opacity: 1;
 }
-.ps5-hw-bottom .ps5-hw-thumb-wrapper:hover {
+.ps5-hw-bottom .ps5-hw-thumb-wrapper.selected {
     border-bottom: 3px solid var(--blue-ps);
     margin-bottom: -3px;
 }
+
 .ps5-hw-bottom .ps5-hw-thumb-wrapper:hover .label{
     color: var(--total-black);
 }
 
 .ps5-hw-bottom .ps5-hw-thumb-wrapper .label {
     color: gray;
+}
+
+.btn-primary {
+    background-color: var(--blue-ps);
 }
 
 /* game banner */
@@ -249,6 +260,10 @@ body {
 .soon {
     background-color: var(--light-black);
     color: white;
+}
+
+.soon .soon-thumb-wrapper:hover {
+    cursor: pointer;
 }
 
 .soon .soon-thumb-wrapper > img {
@@ -275,10 +290,20 @@ body {
     /* padding: 0 */
 }
 
-.btn-light {
+.ps-plus .btn.btn-primary {
+    background-color: white;
+    border-color: white;
+    color: var(--total-black);
+}
+.ps-plus .btn.btn-primary:hover {
+    outline: 3px solid black;
+    outline-offset: -5px;
+}
+
+/* .btn-light {
     background-color: var(--gray);
     color: var(--blue-ps);
-}
+} */
 
 .ps-plus-games {
     max-height: 398px;
@@ -287,6 +312,7 @@ body {
 /* store discount */
 .ps-store img {
     width: 100%;
+    cursor: pointer;
 }
 
 .ps-store .banner-desc {
@@ -298,9 +324,14 @@ body {
     background-color: var(--dark-blue);
 }
 
-.ps-now .btn-light {
+.ps-now .btn.btn-primary {
     background-color: white;
+    border-color: white;
     color: var(--total-black);
+}
+.ps-now .btn.btn-primary:hover {
+    outline: 3px solid black;
+    outline-offset: -5px;
 }
 
 .ps-now .banner-desc-wrapper {
