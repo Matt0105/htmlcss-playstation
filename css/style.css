@@ -7,6 +7,7 @@
     --orange: #cd3d0f;
     --light-orange: #f5815a;
     --gray: #d9dadc;
+    --dark-gray: #bebcbb;
 
     --twitter: #1da1f3;
     --facebook: #1878f3;
@@ -226,6 +227,41 @@ body {
 
 .ps4-hw img {
     width: 100%;
+}
+
+/* ps plus banner */
+.ps-plus {
+    background-color: var(--dark-gray);
+}
+
+.ps-plus.banner .banner-desc-wrapper {
+    width: 100%;
+    /* padding: 0 */
+}
+
+.back-img {
+    min-height: 398px;
+}
+
+@media screen and (min-width: 768px) {
+    /* .back-img {
+        min-height: 398px;
+        background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    } */
+
+
+}
+
+.btn-light {
+    background-color: var(--gray);
+    color: var(--blue-ps);
+}
+
+.ps-plus-games {
+    max-height: 398px;
 }
 
 @media screen and (max-width: 991px) {
