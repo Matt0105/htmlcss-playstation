@@ -2,6 +2,7 @@
     --total-black: black;
     --light-black: #1f1f1f;
     --light-black-btn: #363636;
+    --grey-black-btn: #524e4e;
     --blue-ps: #2d64e6;
     --deep-blue: #00439c;
     --dark-blue: #161c3b;
@@ -95,6 +96,11 @@ body {
 .bottom_header .navbar-nav .nav-item .btn-secondary {
     background-color: var(--light-black-btn);
 }
+.bottom_header .navbar-nav .nav-item .btn-secondary:hover {
+    background-color: var(--grey-black-btn);
+    outline: 2px solid white;
+    outline-offset: -5px;
+}
 
 .bottom_header .sub-link {
     text-align: center;
@@ -167,11 +173,22 @@ body {
 }
 
 .jumbo_bottom .jumbo-thumbs:hover {
-    border-radius: 20px;
-    outline: 5px solid var(--blue-ps);
-    outline-offset: 5px;
     cursor: pointer;
 }
+
+.jumbo_bottom .jumbo-thumbs {
+    transition: all 0.5s;
+}
+.jumbo_bottom .jumbo-thumbs:hover {
+    transform: translate(0, -10px);
+}
+
+.jumbo_bottom .jumbo-thumbs.selected {
+    outline: 5px solid var(--blue-ps);
+    outline-offset: 5px;
+    border-radius: 20px;
+}
+
 
 /* ps5 hardware section */
 .ps5-hw-top {
