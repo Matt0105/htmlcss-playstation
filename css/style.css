@@ -4,6 +4,7 @@
     --light-black-btn: #363636;
     --blue-ps: #2d64e6;
     --deep-blue: #00439c;
+    --dark-blue: #161c3b;
     --orange: #cd3d0f;
     --light-orange: #f5815a;
     --gray: #d9dadc;
@@ -255,6 +256,25 @@ body {
 
 .ps-store .banner-desc {
     color: gray;
+}
+
+/* ps-now */
+.ps-now {
+    background-color: var(--dark-blue);
+}
+
+.ps-now .btn-light {
+    background-color: white;
+    color: var(--total-black);
+}
+
+.ps-now .banner-desc-wrapper {
+    width: 100%;
+    color: white;
+}
+
+.ps-now .ps-now-games {
+    width: 100%;
 }
 
 @media screen and (max-width: 991px) {
