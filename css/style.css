@@ -28,6 +28,10 @@ body {
     outline-offset: -5px;
 }
 
+.banner-title {
+    font-size: 2.7em;
+}
+
 .sub-title {
     font-size: 2.2em;
     margin-bottom: 0.7em;
@@ -45,15 +49,6 @@ body {
 
 .banner-desc-wrapper img{
     width: 60%;
-}
-
-.banner {
-    background-size: cover;
-    background-position: center;
-}
-
-.banner-title {
-    font-size: 2.7em;
 }
 
 .banner-desc {
@@ -131,7 +126,6 @@ body {
     color: var(--blue-ps);
 }
 
-
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0.255em;
@@ -142,10 +136,6 @@ body {
     font-weight: 900;
     font-size: 0.8em;
     font-family: "Font Awesome 6 Free";
-    /* border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent; */
 }
 .dropdown-toggle.show::after {
     font-family: "Font Awesome 6 Free";
@@ -189,9 +179,7 @@ body {
 }
 .btn_buy:hover {
     background-color: var(--orange);
-    color: white;
-    outline: 3px solid black;
-    outline-offset: -5px;
+    outline-color: black;
 }
 
 /* jumbotron bottom */
@@ -274,7 +262,6 @@ body {
 }
 
 .banner-desc-wrapper > img {
-    /* width: 300px; */
     margin-bottom: 1.5em;
 }
 
@@ -310,7 +297,6 @@ body {
 
 .ps-plus.banner .banner-desc-wrapper {
     width: 100%;
-    /* padding: 0 */
 }
 
 .ps-plus .btn.btn-primary {
@@ -322,11 +308,6 @@ body {
     outline: 3px solid black;
     outline-offset: -5px;
 }
-
-/* .btn-light {
-    background-color: var(--gray);
-    color: var(--blue-ps);
-} */
 
 .ps-plus-games {
     max-height: 398px;
@@ -353,8 +334,7 @@ body {
     color: var(--total-black);
 }
 .ps-now .btn.btn-primary:hover {
-    outline: 3px solid black;
-    outline-offset: -5px;
+    outline-color: black;
 }
 
 .ps-now .banner-desc-wrapper {
@@ -429,3 +409,33 @@ footer .footer-paragraph a {
         width: 40%;
     }
 }
+
+/* .ps-plus-banner {
+    display: flex;
+    background-color: var(--dark-gray);
+    align-items: center;
+    justify-content: center;
+}
+
+.colonna1 {
+    width: 35%;
+}
+.colonna2 {
+    width: 65%;
+}
+
+.colonna1 > img {
+    width: 50%;
+}
+@media screen and (max-width: 992px) {
+    .ps-plus-games {
+        width: 350px;
+    }
+    .ps-plus-banner .banner-desc {
+        width: 100%;
+    }
+
+    .ps-plus-banner .colonna2 {
+        display: none;
+    }
+} */
